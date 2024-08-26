@@ -1,0 +1,113 @@
+[debug] [2024-08-26T09:24:03.607Z] ----------------------------------------------------------------------
+[debug] [2024-08-26T09:24:03.615Z] Command:       /data/data/com.termux/files/usr/bin/node /data/data/com.termux/files/usr/bin/firebase init
+[debug] [2024-08-26T09:24:03.616Z] CLI Version:   13.15.4
+[debug] [2024-08-26T09:24:03.616Z] Platform:      android
+[debug] [2024-08-26T09:24:03.617Z] Node Version:  v22.5.1
+[debug] [2024-08-26T09:24:03.619Z] Time:          Mon Aug 26 2024 14:54:03 GMT+0530 (India Standard Time)
+[debug] [2024-08-26T09:24:03.619Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-08-26T09:24:03.644Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-08-26T09:24:03.647Z] > authorizing via signed-in user (heyowltestseries@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /data/data/com.termux/files/home/HeyOwl-Test-Series
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2024-08-26T09:26:52.980Z] > refreshing access token with scopes: []
+[debug] [2024-08-26T09:26:52.998Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-08-26T09:26:52.998Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-08-26T09:26:54.232Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2024-08-26T09:26:54.232Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-08-26T09:26:54.255Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects [none]
+[debug] [2024-08-26T09:26:54.256Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"projectId":"heyowltest-series5298","name":"HeyOwl! Test Series"}
+[debug] [2024-08-26T09:26:55.573Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects 200
+[debug] [2024-08-26T09:26:55.574Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"name":"operations/cp.9013933211350895178"}
+[debug] [2024-08-26T09:26:55.580Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.9013933211350895178 [none]
+[debug] [2024-08-26T09:26:57.185Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.9013933211350895178 200
+[debug] [2024-08-26T09:26:57.186Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.9013933211350895178 {"name":"operations/cp.9013933211350895178"}
+[debug] [2024-08-26T09:26:57.692Z] [Project Creation Poller] Retrying task index 0
+[debug] [2024-08-26T09:26:57.705Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.9013933211350895178 [none]
+[debug] [2024-08-26T09:26:58.423Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.9013933211350895178 200
+[debug] [2024-08-26T09:26:58.425Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.9013933211350895178 {"name":"operations/cp.9013933211350895178","metadata":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.ProjectCreationStatus","gettable":true}}
+[debug] [2024-08-26T09:26:59.430Z] [Project Creation Poller] Retrying task index 0
+[debug] [2024-08-26T09:26:59.437Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.9013933211350895178 [none]
+[debug] [2024-08-26T09:27:00.064Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.9013933211350895178 200
+[debug] [2024-08-26T09:27:00.064Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.9013933211350895178 {"name":"operations/cp.9013933211350895178","metadata":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.ProjectCreationStatus","gettable":true,"ready":true},"done":true,"response":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.Project","projectNumber":"657318805690","projectId":"heyowltest-series5298","lifecycleState":"ACTIVE","name":"HeyOwl! Test Series","createTime":"2024-08-26T09:26:58.108583Z"}}
+[debug] [2024-08-26T09:27:00.071Z] >>> [apiv2][query] POST https://firebase.googleapis.com/v1beta1/projects/heyowltest-series5298:addFirebase [none]
+[debug] [2024-08-26T09:27:03.317Z] <<< [apiv2][status] POST https://firebase.googleapis.com/v1beta1/projects/heyowltest-series5298:addFirebase 200
+[debug] [2024-08-26T09:27:03.320Z] <<< [apiv2][body] POST https://firebase.googleapis.com/v1beta1/projects/heyowltest-series5298:addFirebase {"name":"operations/workflows/MGJhZjFhOTItZTczNC00MjRmLThlZmMtMmQ3OGFhY2YxZGI4"}
+[debug] [2024-08-26T09:27:03.325Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/MGJhZjFhOTItZTczNC00MjRmLThlZmMtMmQ3OGFhY2YxZGI4 [none]
+[debug] [2024-08-26T09:27:06.456Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/MGJhZjFhOTItZTczNC00MjRmLThlZmMtMmQ3OGFhY2YxZGI4 200
+[debug] [2024-08-26T09:27:06.459Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/MGJhZjFhOTItZTczNC00MjRmLThlZmMtMmQ3OGFhY2YxZGI4 {"name":"operations/workflows/MGJhZjFhOTItZTczNC00MjRmLThlZmMtMmQ3OGFhY2YxZGI4"}
+[debug] [2024-08-26T09:27:06.961Z] [Add Firebase Poller] Retrying task index 0
+[debug] [2024-08-26T09:27:06.965Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/MGJhZjFhOTItZTczNC00MjRmLThlZmMtMmQ3OGFhY2YxZGI4 [none]
+[debug] [2024-08-26T09:27:07.762Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/MGJhZjFhOTItZTczNC00MjRmLThlZmMtMmQ3OGFhY2YxZGI4 200
+[debug] [2024-08-26T09:27:07.764Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/MGJhZjFhOTItZTczNC00MjRmLThlZmMtMmQ3OGFhY2YxZGI4 {"name":"operations/workflows/MGJhZjFhOTItZTczNC00MjRmLThlZmMtMmQ3OGFhY2YxZGI4"}
+[debug] [2024-08-26T09:27:08.767Z] [Add Firebase Poller] Retrying task index 0
+[debug] [2024-08-26T09:27:08.772Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/MGJhZjFhOTItZTczNC00MjRmLThlZmMtMmQ3OGFhY2YxZGI4 [none]
+[debug] [2024-08-26T09:27:09.674Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/MGJhZjFhOTItZTczNC00MjRmLThlZmMtMmQ3OGFhY2YxZGI4 200
+[debug] [2024-08-26T09:27:09.676Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/MGJhZjFhOTItZTczNC00MjRmLThlZmMtMmQ3OGFhY2YxZGI4 {"name":"operations/workflows/MGJhZjFhOTItZTczNC00MjRmLThlZmMtMmQ3OGFhY2YxZGI4"}
+[debug] [2024-08-26T09:27:11.686Z] [Add Firebase Poller] Retrying task index 0
+[debug] [2024-08-26T09:27:11.692Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/MGJhZjFhOTItZTczNC00MjRmLThlZmMtMmQ3OGFhY2YxZGI4 [none]
+[debug] [2024-08-26T09:27:13.065Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/MGJhZjFhOTItZTczNC00MjRmLThlZmMtMmQ3OGFhY2YxZGI4 200
+[debug] [2024-08-26T09:27:13.067Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/MGJhZjFhOTItZTczNC00MjRmLThlZmMtMmQ3OGFhY2YxZGI4 {"name":"operations/workflows/MGJhZjFhOTItZTczNC00MjRmLThlZmMtMmQ3OGFhY2YxZGI4"}
+[debug] [2024-08-26T09:27:17.068Z] [Add Firebase Poller] Retrying task index 0
+[debug] [2024-08-26T09:27:17.076Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/MGJhZjFhOTItZTczNC00MjRmLThlZmMtMmQ3OGFhY2YxZGI4 [none]
+[debug] [2024-08-26T09:27:17.685Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/MGJhZjFhOTItZTczNC00MjRmLThlZmMtMmQ3OGFhY2YxZGI4 200
+[debug] [2024-08-26T09:27:17.687Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/MGJhZjFhOTItZTczNC00MjRmLThlZmMtMmQ3OGFhY2YxZGI4 {"name":"operations/workflows/MGJhZjFhOTItZTczNC00MjRmLThlZmMtMmQ3OGFhY2YxZGI4","done":true,"response":{"@type":"type.googleapis.com/google.firebase.service.v1beta1.FirebaseProject","projectId":"heyowltest-series5298","projectNumber":"657318805690","displayName":"HeyOwl! Test Series","name":"projects/heyowltest-series5298","resources":{"hostingSite":"heyowltest-series5298"}}}
+[info] 
+[info] 🎉🎉🎉 Your Firebase project is ready! 🎉🎉🎉
+[info] 
+[info] Project information:
+[info]    - Project ID: heyowltest-series5298
+[info]    - Project Name: HeyOwl! Test Series
+[info] 
+[info] Firebase console is available at
+[info] https://console.firebase.google.com/project/heyowltest-series5298/overview
+[info] i  Using project heyowltest-series5298 (HeyOwl! Test Series) 
+[info] 
+=== Hosting Setup
+[debug] [2024-08-26T09:27:17.712Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/heyowltest-series5298 [none]
+[debug] [2024-08-26T09:27:18.608Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/heyowltest-series5298 200
+[debug] [2024-08-26T09:27:18.611Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/heyowltest-series5298 {"projectId":"heyowltest-series5298","projectNumber":"657318805690","displayName":"HeyOwl! Test Series","name":"projects/heyowltest-series5298","resources":{"hostingSite":"heyowltest-series5298"},"state":"ACTIVE","etag":"1_e4a83bb6-a04d-493a-81b3-6444b6154769"}
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2024-08-26T09:28:17.497Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2024-08-26T09:28:18.395Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2024-08-26T09:28:18.397Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"10.13.0","browserURL":"https://www.gstatic.com/firebasejs/10.13.0/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/10.13.0/firebase.tgz"},"live":{"version":"10.13","browserURL":"https://www.gstatic.com/firebasejs/live/10.13/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/10.13/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/10.13.0/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/10.13.0/firebase-app.js","app-check":"https://www.gstatic.com/firebasejs/10.13.0/firebase-app-check.js","auth":"https://www.gstatic.com/firebasejs/10.13.0/firebase-auth.js","auth/cordova":"https://www.gstatic.com/firebasejs/10.13.0/firebase-auth/cordova.js","auth/web-extension":"https://www.gstatic.com/firebasejs/10.13.0/firebase-auth/web-extension.js","functions":"https://www.gstatic.com/firebasejs/10.13.0/firebase-functions.js","firestore":"https://www.gstatic.com/firebasejs/10.13.0/firebase-firestore.js","firestore/lite":"https://www.gstatic.com/firebasejs/10.13.0/firebase-firestore/lite.js","installations":"https://www.gstatic.com/firebasejs/10.13.0/firebase-installations.js","storage":"https://www.gstatic.com/firebasejs/10.13.0/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/10.13.0/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/10.13.0/firebase-remote-config.js","messaging":"https://www.gstatic.com/firebasejs/10.13.0/firebase-messaging.js","messaging/sw":"https://www.gstatic.com/firebasejs/10.13.0/firebase-messaging/sw.js","database":"https://www.gstatic.com/firebasejs/10.13.0/firebase-database.js","vertexai-preview":"https://www.gstatic.com/firebasejs/10.13.0/firebase-vertexai-preview.js","firestore.memory":"https://www.gstatic.com/firebasejs/10.13.0/firebase-firestore.memory.js"}}
+[info] ✔  Wrote build/index.html 
+[info] 
+[info] i  Didn't detect a .git folder. Assuming /data/data/com.termux/files/home/HeyOwl-Test-Series is the project root. 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=686051748&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2024-08-26T09:29:25.888Z] >>> [apiv2][query] POST https://github.com/login/oauth/access_token [none]
+[debug] [2024-08-26T09:29:25.891Z] >>> [apiv2][body] POST https://github.com/login/oauth/access_token [stream]
+[debug] [2024-08-26T09:29:26.694Z] <<< [apiv2][status] POST https://github.com/login/oauth/access_token 200
+[debug] [2024-08-26T09:29:26.695Z] <<< [apiv2][body] POST https://github.com/login/oauth/access_token {"access_token":"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","token_type":"bearer","scope":"read:user,repo"}
+[debug] [2024-08-26T09:29:26.734Z] >>> [apiv2][query] GET https://api.github.com/user [none]
+[debug] [2024-08-26T09:29:27.607Z] <<< [apiv2][status] GET https://api.github.com/user 200
+[debug] [2024-08-26T09:29:27.610Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"Ownerlost","id":159863419,"node_id":"U_kgDOCYdSew","avatar_url":"https://avatars.githubusercontent.com/u/159863419?v=4","gravatar_id":"","url":"https://api.github.com/users/Ownerlost","html_url":"https://github.com/Ownerlost","followers_url":"https://api.github.com/users/Ownerlost/followers","following_url":"https://api.github.com/users/Ownerlost/following{/other_user}","gists_url":"https://api.github.com/users/Ownerlost/gists{/gist_id}","starred_url":"https://api.github.com/users/Ownerlost/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/Ownerlost/subscriptions","organizations_url":"https://api.github.com/users/Ownerlost/orgs","repos_url":"https://api.github.com/users/Ownerlost/repos","events_url":"https://api.github.com/users/Ownerlost/events{/privacy}","received_events_url":"https://api.github.com/users/Ownerlost/received_events","type":"User","site_admin":false,"name":null,"company":null,"blog":"","location":null,"email":null,"hireable":null,"bio":null,"twitter_username":null,"notification_email":null,"public_repos":38,"public_gists":0,"followers":4,"following":4,"created_at":"2024-02-13T02:39:05Z","updated_at":"2024-08-17T03:39:12Z","private_gists":0,"total_private_repos":4,"owned_private_repos":4,"disk_usage":1248,"collaborators":0,"two_factor_authentication":false,"plan":{"name":"free","space":976562499,"collaborators":0,"private_repos":10000}}
+[info] 
+[info] ✔  Success! Logged into GitHub as Ownerlost 
+[info] 
